@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="box-container">
+        <h3 class="heading">Form Validation</h3>
+        <form action="" name="myForm" onsubmit="return validateForm()" method="POST">
+            <div class="name-flex-container">
+                <div class="firstName">
+                    <label for="first-name" id="first-name-label">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" onblur="validateFirstName()">
+                    <div class="error" id="first-name-error">Required</div>
+                </div>
+                <div class="middleName">
+                    <label for="middle-name">Middle Name</label>
+                    <input type="text" id="middle-name" name="middle-name">
+                </div>
+                <div class="lastName">
+                    <label for="last-name" id="last-name-label">Last Name*</label>
+                    <input type="text" id="last-name" name="last-name" onblur="validateLastName()">
+                    <div class="error" id="last-name-error">Required</div>
+                </div>
+            </div>
+
+            <div class="email">
+                <label for="email" id="email-label">Email*</label>
+                <input type="email" name="email" id="email" onblur="validateEmail()">
+                <div class="error" id="email-error">Enter a valid email</div>
+            </div>
+
+            <div class="phoneNumber">
+                <label for="phone-number" id="phone-number-label">Phone Number*</label>
+                <input type="number" name="phone-number" id="phone-number" onblur="validatePhoneNumber()">
+                <div class="error" id="phone-number-error">Enter valid number</div>
+            </div>
+
+            <div class="address">
+                <label for="address" id="address-label">Address*</label>
+                <input type="text" name="address" id="address" onblur="validateAddress()">
+                <div class="error" id="address-error">Address field must have atleast 3 characters</div>
+            </div>
+
+            <div class="add-codes-flex">
+                <div class="country">
+                    <label for="country" id="country-label">Country*</label>
+                    <select name="country" id="country" onblur="validateCountry()">
+                        <option selected="" value="default"></option>
+                        <option value="australia">Australia</option>
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="south-africa">South Africa</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <div class="error" id="country-error">Required</div>
+                </div>
+                <div class="state">
+                    <label for="state" id="state-label">State*</label>
+                    <select name="state" id="state" onblur="validateState()">
+                        <option selected="" value="default"></option>
+                        <option value="andra-pradesh">Andra Pradesh</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="goa">Goa</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="madhya-pradesh">Madhya Pradesh</option>
+                        <option value="uttar-pradesh">Uttar Pradesh</option>
+                    </select>
+                    <div class="error" id="state-error">Required</div>
+                </div>
+                <div class="city">
+                    <label for="city" id="city-label">City*</label>
+                    <input type="text" name="city" id="city" onblur="validateCity()">
+                    <div class="error" id="city-error">Required</div>
+                </div>
+            </div>
+            <div class="buttons-flex">
+                <div class="reset">
+                    <input type="reset" value="Reset" id="resetID">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" id="submitID">
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+
+</html>

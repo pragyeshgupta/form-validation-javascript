@@ -1,0 +1,84 @@
+body{
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.box-container{
+    background-color: rgb(250, 249, 244);
+    margin: auto;
+    width: 80%;
+    margin-top: 2%;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 3px 8px grey;
+    -moz-box-shadow: 2px 3px 8px grey;
+    box-shadow: 2px 3px 8px grey;
+}
+.box-container h3{
+    padding-top: 15px;
+    text-align-last: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(51, 148, 204);
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    background-color: rgb(250, 249, 244);
+}
+select{
+    width: 100%;
+    height: 36px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    background-color: rgb(250, 249, 244);
+}
+.name-flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.firstName, .middleName, .lastName{ 
+    margin: 20px;
+    width: 100%;
+}
+.email, .phoneNumber, .address{
+    margin: 10px 20px 10px 20px;
+}
+.email{
+    margin-top: -10px;
+}
+.add-codes-flex{
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+}
+.country, .state, .city{
+    margin: 20px;
+    width: 100%;
+}
+.state{
+    align-items: center;
+}
+.buttons-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px;
+    margin-top: -5px;
+    margin-right: -5px;
+}
+.reset, .submit{
+    margin: 3px;
+    width: 60px;
+}
+#resetID, #submitID{
+    color: rgb(250, 249, 244);
+    border-radius: 2px;
+    border-color: rgb(51, 148, 204);
+    background-color: rgb(51, 148, 204);
+}
+.error { 
+    font-size: small;
+    visibility: hidden;
+    color: red;
+}
